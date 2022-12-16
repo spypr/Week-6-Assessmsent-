@@ -25,7 +25,7 @@ rollbar.log('Hello world!')
 
 app.get('/api/robots', (req, res) => {
     try {
-        res.status(200).send(botsArr)
+        res.status(200).send(bots)
     } catch (error) {
         rollbar.error('Get all robots error', error)
         console.log('ERROR GETTING BOTS', error)
